@@ -138,6 +138,9 @@ text-align: center;
     height: auto;
     object-fit: cover; 
 } 
+
+
+/* para telas menores  */
 @media only screen and (max-width: 480px) {
     .container {
         grid-template-columns: 1fr;
@@ -159,6 +162,36 @@ text-align: center;
         color: black;
     }
 }
+
+
+@media only screen and (max-width: 320px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            'perfil'
+            'header'
+            'aside'
+            'main'
+            'footer';
+    }
+    
+    p {
+        font-size: 0.8em; 
+    }
+    aside{
+        background-color: white;
+
+        color: black;
+    }
+}
+
+
+
+
+
+
+
 .icone{
 
     width: 15%;
